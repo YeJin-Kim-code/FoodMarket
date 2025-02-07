@@ -10,6 +10,18 @@
       div {
         text-align: center;
       }
+      .card {
+        text-align: center;
+      }
+      .card_img {
+        width: 200px;
+        height: 200px;
+      }
+      .card_button {
+        font-size: 25px;
+        width: 150px;
+        height: 30px;
+      }
     </style>
   </head>
   <body>
@@ -18,6 +30,38 @@
       안녕하세요 <br />
       먹고싶은 음식을 선택하세요 <br />
       음식의 가게와 종류를 소개합니다!
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+      <div class="card">
+        <img class="card_img" src="./img/chicken.png" />
+        <p>chicken</p>
+        <input
+          class="card_button"
+          type="button"
+          value="search"
+          onclick="alert(1);"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/firedark.png" />
+        <p>fireramen</p>
+        <input
+          class="card_button"
+          type="button"
+          value="search"
+          onclick="alert(2);"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/mara.png" />
+        <p>mara</p>
+        <input
+          class="card_button"
+          type="button"
+          value="search"
+          onclick="alert(3);"
+        />
+      </div>
     </div>
   </body>
 </html>
